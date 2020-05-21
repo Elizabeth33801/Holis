@@ -16,5 +16,14 @@ namespace Holis
     {
       InitializeComponent();
     }
-  }
+    Label label1;
+        private void button1_Click(object sender, EventArgs e)
+        {
+      label1 = new Label();
+      label1.Text = "Holis";
+      label1.Location = new Point(0, 0);
+      label1.Size = new Size(20, 50);
+      
+        }
+    }
 }
