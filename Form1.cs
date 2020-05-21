@@ -10,21 +10,21 @@ using System.Windows.Forms;
 
 namespace Holis
 {
+
   public partial class Form1 : Form
   {
+    
     public Form1()
     {
       InitializeComponent();
     }
-    Label label1;
-        private void button1_Click(object sender, EventArgs e)
+    Acciones claseAcciones = new Acciones();
+   
+
+    private void button1_Click(object sender, EventArgs e)
         {
-    
-      label1 = new Label();
-      label1.Text = "Holis";
-      label1.Location = new Point(0, 0);
-      label1.Size = new Size(20, 50);
       
+      claseAcciones.Saludar();
         }
     }
 }
