@@ -1,7 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -10,21 +8,22 @@ using System.Windows.Forms;
 
 namespace Holis
 {
-  public partial class Form1 : Form
+  class Acciones
   {
-    public Form1()
-    {
-      InitializeComponent();
-    }
     Label label1;
-        private void button1_Click(object sender, EventArgs e)
-        {
-    
-      label1 = new Label();
+    public void Saludar()
+    {
       label1.Text = "Holis";
       label1.Location = new Point(0, 0);
       label1.Size = new Size(20, 50);
-      
-        }
+   
     }
+    public void DecirAdios()
+    {
+      label1.Text = "Adiuuu";
+      label1.Location = new Point(0, 0);
+      label1.Size = new Size(20, 50);
+      //agregue una clase llamada acciones es un cambio que tengo que sincronizar
+    }
+  }
 }
