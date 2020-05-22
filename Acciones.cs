@@ -9,30 +9,29 @@ using System.Windows.Forms;
 
 namespace Holis
 {
-  class Acciones
-  {
-    public Acciones()
+    class Acciones
     {
-      Saludar();
-      DecirAdios();
-   
-    }
-    Label label1;
+        public Acciones()
+        {
 
-    public void Saludar()
-    {
-      label1.Text = "Holis";
+        }
 
-      label1.Location = new Point(0, 0);
-      label1.Size = new Size(20, 50);
-     
+        Label label1 = new Label();
+
+        public void Saludar()
+        {
+            label1.Text = "Holis";
+
+            label1.Location = new Point(0, 0);
+            label1.Size = new Size(20, 50);
+
+        }
+        public void DecirAdios()
+        {
+            label1.Text = "Adiuuu";
+            label1.Location = new Point(0, 0);
+            label1.Size = new Size(20, 50);
+
+        }
     }
-    public void DecirAdios()
-    {
-      label1.Text = "Adiuuu";
-      label1.Location = new Point(0, 0);
-      label1.Size = new Size(20, 50);
-      
-    }
-  }
 }

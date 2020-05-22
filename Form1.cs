@@ -11,20 +11,24 @@ using System.Windows.Forms;
 namespace Holis
 {
 
-  public partial class Form1 : Form
-  {
-    
-    public Form1()
+    public partial class Form1 : Form
     {
-      InitializeComponent();
-    }
-    Acciones claseAcciones = new Acciones();
-   
 
-    private void button1_Click(object sender, EventArgs e)
+        public Form1()
         {
-      
-      claseAcciones.Saludar();
+            InitializeComponent();
+        }
+        Acciones claseAcciones = new Acciones();
+
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            claseAcciones.Saludar();
+        }
+
+        private void btnPushme_Click(object sender, EventArgs e)
+        {
+            lblCool.Visible = true;
         }
     }
 }
